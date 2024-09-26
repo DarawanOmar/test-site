@@ -17,6 +17,13 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://nextjs-site-com.vercel.app",
+    siteName: "Foodie",
+  },
+  metadataBase: new URL("https://nextjs-site-com.vercel.app"),
 };
 
 export default function RootLayout({
