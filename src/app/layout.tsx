@@ -1,9 +1,12 @@
 import Header from "@/components/Header";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Nunito({
+  subsets: ["latin"],
+  weight: ["400", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
   title: {

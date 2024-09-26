@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/logo.svg";
 import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 
 const links = [
   { title: "Home", href: "/" },
@@ -11,6 +13,7 @@ const links = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
   return (
     <div className="p-3 flex justify-between items-center">
       <Link href="/" className="flex items-center gap-3 ">
@@ -21,8 +24,8 @@ export default function Header() {
           <Link key={i} href={link.href}>
             <div className="inline-block text-center text-md">
               <span
-                className={cn("block", {
-                  "font-semibold text-primary": link.href === "/",
+                className={cn("block duration-500", {
+                  "font-semibold text-primary": link.href === pathname,
                 })}
               >
                 {link.title}
@@ -31,7 +34,7 @@ export default function Header() {
                 className={cn(
                   "block w-[39px] border-b-2 border-primary mx-auto font-semibold ",
                   {
-                    hidden: link.href !== "/",
+                    hidden: link.href !== pathname,
                   }
                 )}
               ></span>
