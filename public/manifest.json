@@ -1,6 +1,6 @@
 {
-  "name": "My awesome PWA app",
-  "short_name": "PWA App",
+  "name": "Foodie",
+  "short_name": "Foodie App",
   "icons": [
     {
       "src": "/2.png",
