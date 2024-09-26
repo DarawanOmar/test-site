@@ -8,7 +8,6 @@ const links = [
   { title: "Our Menu", href: "/menu" },
   { title: "About us", href: "/about" },
   { title: "Contact us", href: "/contact" },
-  { title: "Login", href: "/login" },
 ];
 
 export default function Header() {
