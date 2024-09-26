@@ -32,7 +32,7 @@ export default function Header() {
               </span>
               <span
                 className={cn(
-                  "block w-[39px] border-b-2 border-primary mx-auto font-semibold ",
+                  "block w-[35px] border-b-2 border-primary mx-auto font-semibold ",
                   {
                     hidden: link.href !== pathname,
                   }
