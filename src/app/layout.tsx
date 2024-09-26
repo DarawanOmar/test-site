@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     siteName: "Foodie",
   },
   metadataBase: new URL("https://nextjs-site-com.vercel.app"),
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({
