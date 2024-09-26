@@ -1,36 +1,5 @@
-import React from "react";
-import achivment from "@/public/cards/achivement.svg";
-import rocket from "@/public/cards/rocket.svg";
-import hand from "@/public/cards/hand-mobile.svg";
-import pay from "@/public/cards/pay-money.svg";
+import { cards } from "@/constants";
 import Image from "next/image";
-
-const cards = [
-  {
-    image: achivment,
-    title: "Quality Food",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    link: "Learn More",
-  },
-  {
-    image: rocket,
-    title: "Quality Food",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    link: "Learn More",
-  },
-  {
-    image: pay,
-    title: "Quality Food",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    link: "Learn More",
-  },
-  {
-    image: hand,
-    title: "Quality Food",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    link: "Learn More",
-  },
-];
 
 function Cards() {
   return (

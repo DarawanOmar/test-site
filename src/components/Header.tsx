@@ -4,13 +4,7 @@ import Link from "next/link";
 import logo from "@/public/logo.svg";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
-
-const links = [
-  { title: "Home", href: "/" },
-  { title: "Our Menu", href: "/menu" },
-  { title: "About us", href: "/about" },
-  { title: "Contact us", href: "/contact" },
-];
+import { links } from "@/constants";
 
 export default function Header() {
   const pathname = usePathname();
